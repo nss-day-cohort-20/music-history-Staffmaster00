@@ -3,28 +3,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Music History</title>
+  <title>Music History | List</title>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+<!-- Nav Bar -->
 	<header>
 		<nav>
-			<ul>
+			
+				<a href="index.html">View Music</a> |
+				<a href="addmusic.html">Add Music</a> |
+				<a href="profile.html">Profile</a>
 				
-				<li><a href="addmusic.html">Add Music</a></li>
-				<li><a href="profile.html">Profile</a></li>
-				
-			</ul>
+			
 		</nav>
 	</header>
-	<section id="songblock">
+	<!-- Container for Options and Showcase -->
+	<div id="songblock">
+	<!-- Options -->
 		<div class="options">
 			<form class ="slider">
 				<label id ="songlength" for="songlength">Song Length:</label>
+				<br>
 				<input type="range" name="songlength">
 			</form>
-			<form>
+			<form class="artistlist">
 				<label>Artist:</label>
+				<br>
 				<select id="artists" name="artist_group">
 					<option value="Muse">
 						Muse
@@ -37,8 +42,9 @@
 					</option>
 				</select>
 			</form>
-			<form>
+			<form class="albumlist">
 				<label>Album:</label>
+				<br>
 				<select id="albums" name="album_group">
 					<option value="placeholder">
 						placeholder
@@ -51,38 +57,45 @@
 					</option>
 				</select>
 			</form>
-			<form>
+			<form class="genre">
 				<label>Genre:</label>
-				<input id="rock" type="checkbox" name="rock" value="rock"><label for="rock">Rock</label>
-				<input id="classical" type="checkbox" name="classical" value="classical"><label for="classical">Classical</label>
-				<input id="pop" type="checkbox" name="pop" value="pop"><label for="pop">Pop</label>
-				<input id="jazz" type="checkbox" name="jazz" value="jazz"><label for="jazz">Jazz</label>
-				<input id="blues" type="checkbox" name="blues" value="blues"><label for="blues">Blues</label>
-				<input id="hiphop" type="checkbox" name="hiphop" value="hiphop"><label for="hiphop">Hip hop</label>
+				<br>
+				<div class="genreOne">
+					<input id="rock" type="checkbox" name="rock" value="rock"><label for="rock">Rock</label>
+					<input id="classical" type="checkbox" name="classical" value="classical"><label for="classical">Classical</label>
+					<input id="pop" type="checkbox" name="pop" value="pop"><label for="pop">Pop</label>
+				</div>
+				<div class="genreTwo">
+					<input id="jazz" type="checkbox" name="jazz" value="jazz"><label for="jazz">Jazz</label>
+					<input id="blues" type="checkbox" name="blues" value="blues"><label for="blues">Blues</label>
+					<input id="hiphop" type="checkbox" name="hiphop" value="hiphop"><label for="hiphop">Hip hop</label>
+				</div>
 			</form>
+			<br>
 			<button class="filter">Filter</button>
 		</div>
+		<!-- Showcase -->
 		<div class="showcase">
 			<!-- Likely gonna switch to javascript here -->
 			<div class="firstDisplay">
-				<h1>Song Name</h1>
+				<h2>Song Name</h2>
 				<p>Artist name | Album name | Genre</p>
 			</div>
 			<div class="secondDisplay">
-				<h1>Song Name</h1>
+				<h2>Song Name</h2>
 				<p>Artist name | Album name | Genre</p>
 			</div>
 			<div class="thirdDisplay">
-				<h1>Song Name</h1>
+				<h2>Song Name</h2>
 				<p>Artist name | Album name | Genre</p>
 			</div>
 			<div class="fourthDisplay">
-				<h1>Song Name</h1>
+				<h2>Song Name</h2>
 				<p>Artist name | Album name | Genre</p>
 			</div>
 		</div>
 		
-	</section>
+	</div>
 
 
 
