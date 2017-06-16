@@ -1,16 +1,84 @@
-/*CSS for Index.html*/
-.profile {
-	background-color: #FFB4B0 
-	border:solid;
+
+nav {
+    background-color: #FFB4B0;
+    /*text-decoration: none;*/
+    border: solid;
+    border-width: 2px;
+    padding: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    /*display: inline;*/
 }
-.navigation {
-	background-color: #4DD7FA
-	border:solid;
+
+
+/*Index.html page and profile cssing mostly*/
+
+
+/*Contains both options and showcase*/
+
+#songblock {
+    display: inline-flex;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
+
+
+/*Song options stuff*/
+
+.options {
+    background-color: #4DD7FA;
+    border: solid;
+    border-width: 2px;
+    padding: 15px;
+    margin-right: 1%;
+    width: 12%;
+}
+
+.artistlist {}
+
+.albumlist {}
+
+.genre {}
+
+
+/*Grids for song options*/
+
+.genreOne {
+    display: inline-grid;
+}
+
+.genreTwo {
+    display: inline-grid;
+}
+
+
+/*Showcase and stuff*/
+
 .showcase {
-	background-color: #FEFAC0
-	border:solid;
+    background-color: #FEFAC0;
+    border: solid;
+    border-width: 2px;
+    /*padding: 15px;*/
+    width: inherit;
+    text-align: left;
+    padding: 45px;
+    padding-right: auto;
+    margin-right: 10%;
 }
+
 h2 {
-	color: #785616;
+    color: #785616;
+}
+
+
+/*Add music page CSS*/
+
+.addmusic_submitinfo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
